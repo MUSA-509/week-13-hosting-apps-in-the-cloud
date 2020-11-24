@@ -6,6 +6,7 @@
    * Mandatory group checkins on one of these days: Dec 3, 4, 7, or 8. Please reach out to me with a few suggested times. Around lunch time or 5-5:30pm are best for me.
    * Informal checkins by appointment
    * Let's get the projects going :)
+   * Due Dec 15th
 2. Optional &amp; Graded [Homework 5](https://github.com/MUSA-509/homework-5)
    - Due Dec 3rd
    - Work with a partner if you want
