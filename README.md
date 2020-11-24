@@ -37,3 +37,4 @@
 
 * [Mozilla's page on web server](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/What_is_a_web_server)
 * [nginx](https://www.nginx.com/resources/glossary/nginx/) — very popular open source web server
+* [OpenStreetMap is having a moment](https://joemorrison.medium.com/openstreetmap-is-having-a-moment-dcc7eef1bb01)
