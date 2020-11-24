@@ -4,27 +4,27 @@
 1. Select "Launch Instance"
    * Note the description: _"To get started, launch an Amazon EC2 instance, which is a virtual server in the cloud."_
 1. Setup an EC2 instance
-  * Select Ubuntu Server 20.04
-  * Keep `t2.micro` — see [pricing](https://aws.amazon.com/ec2/pricing/on-demand/)
-  * **Configure Instance Details**
-    * Let's accept all the defaults here
-    * Some things of note:
-      * Spot instances vs on-demand — good way to get cheaper instance if it's ok if it goes down from time to time
-      * IAM Role — we'll be working on setting this up so you and your partner can collaborate together
-  * **Add Storage** — we can keep the defaults. 8 GB should be sufficient for your projects.
-  * **Add Tags** — this is used for organizing projects across AWS, but optional
-  * **Configure Security Group** — this allows our instance to be accessed from the Internet in different ways
-    * SSH (port 22) — we need to keep this one as it's the way we will manage the instance
-    * HTTP (port 80) — we need to add this rule. It will allow our API to receive HTTP requests over the internet
-    * HTTPS (port 443) — for secure HTTP requests
-  * Hit Launch
-    * Create a new keypair — this file will allow you to log into the server from your command line
-    * Download the pem file
-    * Move to a relevant location
-    * Change the permissions of the pem file on the command line (note: the `$` means a command line prompt, not something you type).
-      ```bash
-      $ chmod 400 demo-week-13-musa-509.pem
-      ```
+   * Select Ubuntu Server 20.04
+   * Keep `t2.micro` — see [pricing](https://aws.amazon.com/ec2/pricing/on-demand/)
+   * **Configure Instance Details**
+     * Let's accept all the defaults here
+     * Some things of note:
+       * Spot instances vs on-demand — good way to get cheaper instance if it's ok if it goes down from time to time
+       * IAM Role — we'll be working on setting this up so you and your partner can collaborate together
+   * **Add Storage** — we can keep the defaults. 8 GB should be sufficient for your projects.
+   * **Add Tags** — this is used for organizing projects across AWS, but optional
+   * **Configure Security Group** — this allows our instance to be accessed from the Internet in different ways
+     * SSH (port 22) — we need to keep this one as it's the way we will manage the instance
+     * HTTP (port 80) — we need to add this rule. It will allow our API to receive HTTP requests over the internet
+     * HTTPS (port 443) — for secure HTTP requests
+   * Hit Launch
+     * Create a new keypair — this file will allow you to log into the server from your command line
+     * Download the pem file
+     * Move to a relevant location
+     * Change the permissions of the pem file on the command line (note: the `$` means a command line prompt, not something you type).
+       ```bash
+       $ chmod 400 demo-week-13-musa-509.pem
+       ```
 2. Click on the the `Connect` button to view how we can start changing things on this server
    * SSH into the instance (native with Mac and Linux, [Windows ssh client](https://docs.microsoft.com/en-us/windows/terminal/tutorials/ssh))
      ```bash
